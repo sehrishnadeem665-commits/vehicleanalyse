@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       'Book an inspection for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes.',
     url: 'https://checkmyvan.com/booking',
-    images: ['/opengraph-image'],
+    images: ['/opengraph-image?version=vehicle-analyse-2026-10-29'],
   },
 };
 

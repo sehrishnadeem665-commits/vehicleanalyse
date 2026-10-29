@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       'Call 020 7946 0958 or email info@vehicleanalyse.com. Visit our London facility at 24 Meridian Way, SW18 4QL. Open Mon–Sat.',
     url: 'https://checkmyvan.com/contact',
-    images: ['/opengraph-image'],
+    images: ['/opengraph-image?version=vehicle-analyse-2026-10-29'],
   },
 };
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       'Vehicle-specific inspections for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes across the UK.',
     url: 'https://checkmyvan.com/about',
-    images: ['/opengraph-image'],
+    images: ['/opengraph-image?version=vehicle-analyse-2026-10-29'],
   },
 };
 

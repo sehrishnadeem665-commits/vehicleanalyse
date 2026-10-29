@@ -28,11 +28,11 @@ export const metadata: Metadata = {
     siteName: 'Vehicle Analyse',
     title: 'Vehicle Analyse | UK Vehicle Checks for Cars, Vans & More',
     description:
-      'Vehicle inspections across the UK for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Choose pre-purchase, safety, or diagnostic checks and receive a clear report.',
+      'UK vehicle checks for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Get clear findings in a Digital PDF Report.',
     url: 'https://checkmyvan.com',
     images: [
       {
-        url: '/opengraph-image',
+        url: '/opengraph-image?version=vehicle-analyse-2026-10-29',
         width: 1200,
         height: 630,
         alt: 'Vehicle Analyse UK vehicle checks with clear findings in a Digital PDF Report',
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vehicle Analyse | UK Vehicle Checks for Cars, Vans & More',
     description:
-      'Vehicle inspections across the UK for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Choose pre-purchase, safety, or diagnostic checks and receive a clear report.',
+      'UK vehicle checks for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Get clear findings in a Digital PDF Report.',
     images: [
       {
-        url: '/opengraph-image',
+        url: '/opengraph-image?version=vehicle-analyse-2026-10-29',
         alt: 'Vehicle Analyse UK vehicle checks with clear findings in a Digital PDF Report',
       },
     ],
