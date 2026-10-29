@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'About Vehicle Analyse — Trusted UK Van & Leisure Vehicle Experts',
     description:
       'Vehicle-specific inspections for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes across the UK.',
-    url: 'https://checkmyvan.com/about',
+    url: 'https://vehicleanalyse.com/about',
     images: ['/opengraph-image?version=vehicle-analyse-2026-10-29'],
   },
 };

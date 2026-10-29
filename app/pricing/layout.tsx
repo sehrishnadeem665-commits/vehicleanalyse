@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Pricing — Van, Campervan & Motorhome Checks | Vehicle Analyse',
     description:
       'Compare vehicle inspection prices for cars, motorcycles, SUVs, vans, trucks, caravans, campervans, and motorhomes.',
-    url: 'https://checkmyvan.com/pricing',
+    url: 'https://vehicleanalyse.com/pricing',
     images: ['/opengraph-image?version=vehicle-analyse-2026-10-29'],
   },
 };

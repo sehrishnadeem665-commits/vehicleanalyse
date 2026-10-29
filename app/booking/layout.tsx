@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Book Your Van or Leisure Vehicle Check Online | Vehicle Analyse',
     description:
       'Book an inspection for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes.',
-    url: 'https://checkmyvan.com/booking',
+    url: 'https://vehicleanalyse.com/booking',
     images: ['/opengraph-image?version=vehicle-analyse-2026-10-29'],
   },
 };

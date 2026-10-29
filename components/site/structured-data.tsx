@@ -5,7 +5,7 @@ export function StructuredData() {
     name: 'Vehicle Analyse',
     description:
       'Vehicle inspections for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes, including pre-purchase, safety, diagnostic, and habitation checks.',
-    url: 'https://checkmyvan.com',
+    url: 'https://vehicleanalyse.com',
     telephone: '+442079460958',
     email: 'info@vehicleanalyse.com',
     address: {

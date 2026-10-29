@@ -12,7 +12,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://checkmyvan.com'),
+  metadataBase: new URL('https://vehicleanalyse.com'),
   title: {
     default: 'Vehicle Analyse | UK Vehicle Checks for Cars, Vans & More',
     template: '%s | Vehicle Analyse',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: 'Vehicle Analyse | UK Vehicle Checks for Cars, Vans & More',
     description:
       'UK vehicle checks for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Get clear findings in a Digital PDF Report.',
-    url: 'https://checkmyvan.com',
+    url: 'https://vehicleanalyse.com',
     images: [
       {
         url: '/opengraph-image?version=vehicle-analyse-2026-10-29',
