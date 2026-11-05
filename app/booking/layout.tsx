@@ -3,12 +3,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Book Your Van or Leisure Vehicle Check Online — Vehicle Analyse UK',
   description:
-    'Book a vehicle check for your car, SUV, motorcycle, van, truck, caravan, campervan, or motorhome. Select a service and enter your details online.',
+    'Order a digital PDF vehicle report for your car, SUV, motorcycle, van, truck, caravan, campervan, or motorhome. Your report is sent by email.',
   alternates: { canonical: '/booking' },
   openGraph: {
     title: 'Book Your Van or Leisure Vehicle Check Online | Vehicle Analyse',
     description:
-      'Book an inspection for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes.',
+      'Order a digital PDF vehicle report for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes, delivered by email.',
     url: 'https://vehicleanalyse.com/booking',
     images: ['/opengraph-image?version=vehicle-analyse-2026-10-29'],
   },

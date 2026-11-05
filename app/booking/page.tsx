@@ -84,7 +84,7 @@ export default function BookingPage() {
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=2560&q=90"
-            alt="SUV prepared for a vehicle inspection"
+            alt="SUV representing a digital vehicle report"
             fill
             sizes="100vw"
             className="object-cover opacity-25"
@@ -99,7 +99,7 @@ export default function BookingPage() {
             Book Your Report
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Tell us which vehicle you need inspected, from cars and motorcycles to trucks and motorhomes.
+            Choose the vehicle for your digital PDF report. Your report is sent by email; no visit to an inspection site is required.
           </p>
         </div>
       </section>
