@@ -96,7 +96,7 @@ export default function BookingPage() {
             Digital Report
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-bold font-display text-white mb-4">
-            Book Your Report
+            Purchase Your Report
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
             Choose the vehicle for your digital PDF report. Your report is sent by email; no visit to an inspection site is required.

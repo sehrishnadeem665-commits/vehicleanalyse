@@ -22,7 +22,7 @@ const pricingPlans = [
   {
     name: 'Basic',
     price: 40,
-    period: 'per check',
+    period: 'Per Report',
     description: 'Essential inspection',
     icon: ShieldCheck,
     badge: 'Best for budget',
@@ -42,7 +42,7 @@ const pricingPlans = [
   {
     name: 'Standard',
     price: 50,
-    period: 'per check',
+    period: 'Per Report',
     description: 'Detailed inspection',
     icon: Sparkles,
     badge: 'Most popular',
@@ -63,7 +63,7 @@ const pricingPlans = [
   {
     name: 'Premium',
     price: 60,
-    period: 'per check',
+    period: 'Per Report',
     description: 'Comprehensive inspection',
     icon: Award,
     badge: 'Complete package',
