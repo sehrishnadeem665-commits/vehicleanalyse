@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import {
   Mail,
-  MapPin,
-  Clock,
+  Laptop,
 } from 'lucide-react';
 import { BrandLogo } from '@/components/site/brand-logo';
 
@@ -17,9 +16,6 @@ const footerLinks = {
   support: [
     { label: 'FAQs', href: '/#faq' },
     { label: 'How It Works', href: '/#process' },
-    { label: 'Terms of Service', href: '/terms-of-service' },
-    { label: 'Privacy Policy', href: '/privacy-policy' },
-    { label: 'Refund Policy', href: '/refund-policy' },
   ],
 };
 
@@ -33,8 +29,8 @@ export function Footer() {
               <BrandLogo variant="light" />
             </Link>
             <p className="text-sm text-white/60 leading-relaxed mb-6 max-w-sm">
-              Vehicle condition, safety, diagnostic, and habitation checks for vans,
-              campervans, and motorhomes, with clear findings in a Digital PDF Report.
+              100% digital vehicle analysis and report services for cars, vans,
+              caravans, motorhomes, and more. No physical vehicle inspection is provided.
             </p>
             <div className="space-y-3 text-sm">
             <div className="flex items-center gap-3 text-white/70">
@@ -42,12 +38,8 @@ export function Footer() {
                 <span>info@vehicleanalyse.com</span>
               </div>
               <div className="flex items-center gap-3 text-white/70">
-                <MapPin className="h-4 w-4 text-primary" />
-                <span>24 Meridian Way, London, SW18 4QL</span>
-              </div>
-              <div className="flex items-center gap-3 text-white/70">
-                <Clock className="h-4 w-4 text-primary" />
-                <span>Available 24/7</span>
+                <Laptop className="h-4 w-4 text-primary" />
+                <span>Online reports across the UK</span>
               </div>
             </div>
           </div>

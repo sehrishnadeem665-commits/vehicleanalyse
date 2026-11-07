@@ -6,16 +6,12 @@ import {
   ShieldCheck,
   Award,
   Users,
-  Target,
   Eye,
   HeartHandshake,
   Lightbulb,
-  Wrench,
   ArrowRight,
-  CheckCircle2,
   Star,
   Clock,
-  Camera,
   FileText,
   Search,
 } from 'lucide-react';
@@ -29,39 +25,39 @@ import { Badge } from '@/components/ui/badge';
 const whyChooseUs = [
   {
     icon: ShieldCheck,
-    title: 'Independent & Unbiased',
+    title: 'Digital-Only Service',
     description:
-      'We work for you, not the seller. Our assessments are completely independent — we have no ties to any dealership or repair shop.',
+      'Vehicle Analyse provides online reports and digital analysis. We do not visit, test, or physically inspect vehicles.',
   },
   {
     icon: Search,
-    title: 'Vehicle-Specific Assessments',
+    title: 'Vehicle-Specific Reports',
     description:
-      'Our inspections are matched to the vehicle, covering mechanical systems on cars, SUVs, motorcycles, vans, and trucks, plus habitation systems on caravans, campervans, and motorhomes.',
+      'Choose from digital report services for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes.',
   },
   {
-    icon: Camera,
-    title: 'Photo-Documented Findings',
+    icon: FileText,
+    title: 'Online Vehicle Information',
     description:
-      'Every issue we find is photographed and documented with clear severity ratings, so you can see exactly what we see.',
+      'Available vehicle information is presented digitally for review. Report content depends on the selected service and information available.',
   },
   {
     icon: Clock,
     title: 'Clear Digital Reports',
     description:
-      'Your report records findings and photos relevant to the inspection selected, with recommendations presented clearly.',
+      'Your selected report is delivered digitally. No appointment, vehicle access, or workshop visit is required.',
   },
   {
     icon: Award,
-    title: 'Specialist Inspection Services',
+    title: 'Six Report Services',
     description:
-      'Choose from pre-purchase, road-safety, diagnostic, and habitation checks, with findings recorded for the service selected.',
+      'Choose pre-purchase, safety, diagnostic data, MOT and emissions history, caravan and motorhome, or EV and hybrid analysis.',
   },
   {
     icon: FileText,
-    title: 'Repair Cost Estimates',
+    title: 'Digital Delivery',
     description:
-      'Each finding includes a fair-market repair cost estimate, giving you the leverage to negotiate or plan your budget.',
+      'Order online and receive a digital report by email. The service does not include physical testing or an assessment of vehicle condition.',
   },
 ];
 
@@ -70,32 +66,32 @@ const values = [
     icon: Eye,
     title: 'Transparency',
     description:
-      'We believe in complete honesty. Every finding is documented with photos and clear explanations — no jargon, no hidden agendas.',
+      'We make it clear that our service is digital and that no physical vehicle inspection is carried out.',
   },
   {
     icon: Award,
     title: 'Excellence',
     description:
-      'We use inspection areas relevant to the vehicle, from mechanical and safety systems to motorhome habitation equipment.',
+      'We present vehicle-related information in digital reports shaped around the selected report service.',
   },
   {
     icon: HeartHandshake,
     title: 'Customer First',
     description:
-      'Your peace of mind is our priority. We work for you, not the seller or dealer. Our Digital PDF Reports give you the facts to make confident decisions.',
+      'Our online reports are designed to help customers review available information when making vehicle decisions.',
   },
   {
     icon: Lightbulb,
     title: 'Innovation',
     description:
-      'We continuously invest in the latest diagnostic technology and training to stay ahead of rapidly evolving vehicle technology.',
+      'Digital delivery gives customers a convenient way to access vehicle analysis without arranging an in-person appointment.',
   },
 ];
 
 const milestones = [
-  { year: 'Cars, SUVs & Motorcycles', title: 'Mechanical & Safety Checks', description: 'Pre-purchase, road-safety, diagnostic, and eligible MOT or emissions checks for a range of everyday vehicles.' },
-  { year: 'Vans & Trucks', title: 'Commercial Vehicle Checks', description: 'Vehicle-specific assessments for commercial vehicles, with findings matched to their type and intended use.' },
-  { year: 'Caravans & Motorhomes', title: 'Vehicle & Habitation Checks', description: 'Checks for motorised leisure vehicles and separate habitation assessments for caravans, campervans, and motorhomes.' },
+  { year: 'Cars, SUVs & Motorcycles', title: 'Digital Vehicle Reports', description: 'Online pre-purchase, safety, diagnostic data, and MOT or emissions history reports.' },
+  { year: 'Vans & Trucks', title: 'Digital Vehicle Analysis', description: 'Vehicle-related information presented in a digital report for online review.' },
+  { year: 'Caravans & Motorhomes', title: 'Leisure Vehicle Reports', description: 'Digital vehicle and habitation information reports for caravans, campervans, and motorhomes, with no site inspection.' },
 ];
 
 const mobileSectionHeading =
@@ -108,9 +104,10 @@ export default function AboutPage() {
       <section className="relative pt-28 pb-14 sm:pt-32 sm:pb-20 bg-navy overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2560&q=90"
-            alt="Truck on the road, representing commercial vehicle inspections"
+            src="/about.jpg"
+            alt="Illustration of digital vehicle analysis on a laptop"
             fill
+            priority
             sizes="100vw"
             className="object-cover opacity-45"
           />
@@ -125,9 +122,8 @@ export default function AboutPage() {
               Driven by Transparency, Built on Trust
             </h1>
             <p className="text-sm sm:text-lg text-white/70 leading-relaxed max-w-2xl">
-              Vehicle Analyse provides inspections for cars, SUVs, motorcycles, vans,
-              trucks, caravans, campervans, and motorhomes. Our service options are designed around the different
-              mechanical, road-safety, and habitation needs of each vehicle type.
+              Vehicle Analyse provides 100% digital vehicle analysis and report services for cars, SUVs, motorcycles, vans,
+              trucks, caravans, campervans, and motorhomes. No physical vehicle inspection is required or provided.
             </p>
           </div>
         </div>
@@ -141,8 +137,8 @@ export default function AboutPage() {
               <div className="relative">
                 <TiltCard intensity={8} className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&q=90"
-                    alt="Technician inspecting a van engine"
+                    src="/digital-reports/pre-purchase-report.svg"
+                    alt="Illustration of a digital vehicle report"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
@@ -163,28 +159,24 @@ export default function AboutPage() {
                   Our Story
                 </span>
                 <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold font-display leading-tight text-navy mb-3 sm:mb-6 text-balance">
-                  From a Single Garage to a National Standard
+                  Digital Reports for Confident Decisions
                 </h2>
                 <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
                   <p>
-                    Vehicle Analyse focuses on inspections for cars, SUVs, motorcycles, vans,
-                    trucks, caravans, campervans, and motorhomes. Each vehicle type has different mechanical, road-safety, and
-                    living-area needs, so the right inspection depends on what you own or plan to buy.
+                    Vehicle Analyse provides online vehicle reports for cars, SUVs, motorcycles, vans,
+                    trucks, caravans, campervans, and motorhomes. Select a digital service to review the information relevant to your vehicle.
                   </p>
                   <p>
-                    Motorised vehicles can receive mechanical, safety, diagnostic, and eligible
-                    MOT or emissions checks.
+                    Available services include digital pre-purchase, safety, diagnostic data, and MOT or emissions history reports.
                   </p>
                   <p>
-                    Habitation checks are available for caravans, campervans, and motorhomes, covering the
-                    living-area systems included in that service. Findings are recorded in a
-                    clear report to help you make an informed decision.
+                    Digital caravan and motorhome reports and EV or hybrid analysis reports are also available. Our service does not involve a physical vehicle, battery, or habitation inspection.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4 sm:gap-6 mt-6 sm:mt-8">
                   {[
-                    { icon: ShieldCheck, label: 'Vehicle-Specific Checks' },
-                    { icon: Award, label: 'Clear Digital Pdf' },
+                    { icon: ShieldCheck, label: '100% Digital Reports' },
+                    { icon: Award, label: 'No Physical Inspection' },
                     { icon: Users, label: 'Eight Vehicle Categories' },
                   ].map((item) => (
                     <div key={item.label} className="flex items-center gap-2">
@@ -205,9 +197,9 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-7 sm:gap-8">
             {[
               { icon: Users, value: 8, suffix: '', label: 'Vehicle Categories' },
-              { icon: ShieldCheck, value: 4, suffix: '', label: 'Inspection Categories' },
-              { icon: Award, value: 200, suffix: '+', label: 'Checkpoints in Full Checks' },
-              { icon: Star, value: 1, suffix: '', label: 'Clear Report per Inspection' },
+              { icon: ShieldCheck, value: 6, suffix: '', label: 'Digital Report Services' },
+              { icon: Award, value: 100, suffix: '%', label: 'Digital Service' },
+              { icon: Star, value: 0, suffix: '', label: 'Physical Inspections' },
             ].map((stat, i) => (
               <Reveal key={i} delay={i * 100}>
                 <div className="text-center">
@@ -233,7 +225,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Our Values"
             title="What We Stand For"
-            description="The principles that guide every check we perform and every interaction we have."
+            description="The principles behind our digital reports and online customer experience."
             className={mobileSectionHeading}
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-10 sm:mt-16">
@@ -257,8 +249,8 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Our Journey"
-            title="The Right Check for Each Vehicle"
-            description="Our inspection scope changes with the vehicle, from powered vehicle systems to motorhome living areas."
+            title="Digital Reports for Different Vehicles"
+            description="Choose online reports for vehicle history, safety, diagnostic data, MOT history, leisure vehicles, and EV or hybrid information."
             className={mobileSectionHeading}
           />
           <div className="relative mt-10 sm:mt-16">
@@ -294,7 +286,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Why Vehicle Analyse"
             title="Why Customers Choose Us"
-            description="Independent findings, vehicle-specific checks, and clear reports for the vehicle you need inspected."
+            description="Vehicle-specific digital reports, delivered online without a physical inspection or workshop visit."
             light
             className={mobileSectionHeading}
           />
@@ -318,14 +310,14 @@ export default function AboutPage() {
       <section className="py-14 sm:py-20 bg-primary">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-xl sm:text-4xl font-bold font-display leading-tight text-white mb-3 sm:mb-4 text-balance">
-            Experience the Vehicle Analyse Difference
+            Smart Digital Vehicle Reports for Confident Decisions
           </h2>
           <p className="text-sm sm:text-lg text-white/80 mb-5 sm:mb-8">
-            Get a clearer picture of your car, motorcycle, van, truck, caravan, campervan, or motorhome before making your next decision.
+            Get detailed vehicle insights, history checks and digital analysis reports online. Make informed vehicle decisions with comprehensive information delivered digitally.
           </p>
           <Link href="/booking">
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-2xl px-10">
-              Book Your Check <ArrowRight className="ml-2 h-5 w-5" />
+              Purchase Your Digital Report <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
         </div>

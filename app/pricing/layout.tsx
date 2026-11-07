@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'UK Vehicle Check Prices | Vehicle Analyse',
+  title: 'Digital Vehicle Report Prices | Vehicle Analyse UK',
   description:
-    'Clear pricing for vehicle inspections in the UK, including cars, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Select a check to suit your vehicle.',
+    'Clear pricing for digital vehicle reports for cars, motorcycles, vans, trucks, caravans, campervans, and motorhomes. No physical inspection required.',
   alternates: { canonical: '/pricing' },
   openGraph: {
-    title: 'Pricing — Van, Campervan & Motorhome Checks | Vehicle Analyse',
+    title: 'Pricing — Digital Vehicle Reports | Vehicle Analyse',
     description:
-      'Compare vehicle inspection prices for cars, motorcycles, SUVs, vans, trucks, caravans, campervans, and motorhomes.',
+      'Compare prices for digital vehicle reports for cars, motorcycles, SUVs, vans, trucks, caravans, campervans, and motorhomes.',
     url: 'https://vehicleanalyse.com/pricing',
     images: ['/opengraph-image?version=vehicle-analyse-2026-10-29'],
   },

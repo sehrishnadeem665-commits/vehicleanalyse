@@ -4,14 +4,13 @@ import { useState } from 'react';
 import Image from 'next/image';
 import {
   Mail,
-  MapPin,
   Clock,
   Send,
   MessageSquare,
   CheckCircle2,
   Loader2,
-  Building2,
-  Car,
+  Laptop,
+  FileText,
 } from 'lucide-react';
 import { SectionHeading } from '@/components/site/section-heading';
 import { Reveal } from '@/components/site/reveal';
@@ -30,11 +29,11 @@ const contactInfo = [
     href: 'mailto:info@vehicleanalyse.com',
   },
   {
-    icon: MapPin,
-    title: 'Visit Us',
-    value: '24 Meridian Way, London',
-    subtitle: 'SW18 4QL',
-    href: '#facility',
+    icon: Laptop,
+    title: 'Digital Service',
+    value: '100% Online',
+    subtitle: 'No physical vehicle inspection',
+    href: '/pricing',
   },
   {
     icon: Clock,
@@ -116,12 +115,12 @@ export default function ContactPage() {
               Contact Vehicle Analyse
             </Badge>
             <h1 className="text-3xl font-bold font-display leading-tight text-navy sm:text-5xl lg:text-6xl">
-              Let&apos;s talk about your next vehicle check.
+              Let&apos;s talk about your digital vehicle report.
             </h1>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
-              Questions about a car, motorcycle, van, truck, caravan, campervan,
-              or motorhome? Tell us what you need and our UK team will help you
-              find the right service.
+              Questions about a digital report for a car, motorcycle, van, truck,
+              caravan, campervan, or motorhome? Tell us what you need and we can
+              help you find the right online service.
             </p>
             <a
               href="mailto:info@vehicleanalyse.com"
@@ -134,8 +133,8 @@ export default function ContactPage() {
 
           <div className="relative h-56 overflow-hidden rounded-3xl shadow-2xl shadow-navy/15 sm:h-80 lg:h-[390px]">
             <Image
-              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=90"
-              alt="Car ready for a vehicle condition check"
+              src="/contact.jpg"
+              alt="Illustration of digital vehicle analysis on a laptop"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 45vw"
@@ -144,7 +143,7 @@ export default function ContactPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
             <div className="absolute bottom-5 left-5 right-5 sm:bottom-7 sm:left-7">
               <span className="inline-flex rounded-full border border-white/20 bg-white/15 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md sm:text-sm">
-                Cars · Bikes · Vans · Trucks · Leisure vehicles
+                Digital reports · Cars · Vans · Leisure vehicles
               </span>
             </div>
           </div>
@@ -323,23 +322,23 @@ export default function ContactPage() {
               </div>
             </Reveal>
 
-            {/* Facility Information */}
+            {/* Digital Service Information */}
             <Reveal direction="right">
               <div id="facility">
                 <div className="relative overflow-hidden rounded-2xl bg-navy p-5 sm:rounded-3xl sm:p-8">
                   <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-primary/20 blur-3xl" />
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                    <Building2 className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                    <h3 className="text-lg sm:text-xl font-bold font-display text-white">Contact & Location</h3>
+                    <Laptop className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                    <h3 className="text-lg sm:text-xl font-bold font-display text-white">Digital Service Information</h3>
                   </div>
                   <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm">
                     <div className="flex items-start gap-3 text-white/70">
-                      <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
-                      <span>24 Meridian Way, London<br />SW18 4QL</span>
+                      <Laptop className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Vehicle analysis reports are provided online across the UK.</span>
                     </div>
                     <div className="flex items-start gap-3 text-white/70">
-                      <Car className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
-                      <span>Free on-site parking and easy access from the A3 and South Circular. Contact us to confirm suitability for your vehicle.</span>
+                      <FileText className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Reports are digital. No vehicle drop-off, workshop visit, or physical inspection is required.</span>
                     </div>
                     <div className="flex items-start gap-3 text-white/70">
                       <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
@@ -356,11 +355,11 @@ export default function ContactPage() {
                       </div>
                       <div>
                       <div className="text-xl sm:text-2xl font-bold font-display text-primary">6</div>
-                      <div className="text-[10px] sm:text-xs text-white/50">Inspection Services</div>
+                      <div className="text-[10px] sm:text-xs text-white/50">Digital Report Services</div>
                       </div>
                       <div>
-                      <div className="text-xl sm:text-2xl font-bold font-display text-primary">2</div>
-                      <div className="text-[10px] sm:text-xs text-white/50">Ways to Inspect</div>
+                      <div className="text-xl sm:text-2xl font-bold font-display text-primary">0</div>
+                      <div className="text-[10px] sm:text-xs text-white/50">Physical Inspections</div>
                       </div>
                     </div>
                   </div>

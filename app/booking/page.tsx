@@ -83,9 +83,10 @@ export default function BookingPage() {
       <section className="relative pt-32 pb-12 bg-navy overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=2560&q=90"
-            alt="SUV representing a digital vehicle report"
+            src="/digital-reports/pre-purchase-report.svg"
+            alt="Illustration of a digital vehicle report on a laptop"
             fill
+            priority
             sizes="100vw"
             className="object-cover opacity-25"
           />

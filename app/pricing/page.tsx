@@ -7,7 +7,6 @@ import {
   Star,
   ArrowRight,
   ShieldCheck,
-  Zap,
   Award,
   Sparkles,
 } from 'lucide-react';
@@ -23,19 +22,17 @@ const pricingPlans = [
     name: 'Basic',
     price: 40,
     period: 'Per Report',
-    description: 'Essential inspection',
+    description: 'Essential Digital Vehicle Report:',
     icon: ShieldCheck,
     badge: 'Best for budget',
     features: [
-      'Vehicle-specific safety checks',
-      'Brake and tyre condition',
-      'Lights & signals test',
-      '20+ inspection photos',
-      'Basic Digital PDF Report',
-      '1 vehicle per order',
-      'Report within 1 hour',
+      'Vehicle identification details',
+      'Available MOT history',
+      'Mileage history (where available)',
+      'Tax and road status',
+      'Basic vehicle history summary',
+      'Digital PDF report',
     ],
-    excluded: [],
     cta: 'Purchase Basic',
     popular: false,
   },
@@ -43,20 +40,19 @@ const pricingPlans = [
     name: 'Standard',
     price: 50,
     period: 'Per Report',
-    description: 'Detailed inspection',
+    description: 'Detailed Digital Vehicle Report',
     icon: Sparkles,
     badge: 'Most popular',
     features: [
-      '150+ point inspection',
-      'Full safety checks',
-      'OBD-II diagnostics',
-      '60+ high-resolution photos',
-      'Detailed Digital PDF Report',
-      'Repair cost estimates',
+      'Everything in Basic',
+      'Outstanding finance check',
+      'Write-off history',
+      'Stolen vehicle status',
+      'Mileage discrepancy analysis',
+      'Vehicle specification details',
       'Market value assessment',
-      'Report within 1 hour',
+      'Detailed PDF report',
     ],
-    excluded: [],
     cta: 'Purchase Standard',
     popular: true,
   },
@@ -64,54 +60,27 @@ const pricingPlans = [
     name: 'Premium',
     price: 60,
     period: 'Per Report',
-    description: 'Comprehensive inspection',
+    description: 'Comprehensive Digital Vehicle Report',
     icon: Award,
     badge: 'Complete package',
     features: [
-      'Full 200+ point inspection',
       'Everything in Standard',
-      'Engine compression test',
-      'Leak-down test',
-      '60+ high-resolution photos',
-      'Fluid analysis',
-      'Battery & charging system test',
-      'Undercarriage inspection',
-      'Habitation check option for motorhomes',
-      'Phone consultation',
-      'Digital PDF Report within 1 hour',
+      'Extended vehicle history analysis',
+      'Previous keeper information',
+      'Import/export history',
+      'Vehicle risk assessment',
+      'Comprehensive vehicle insights',
+      'Premium PDF report',
     ],
-    excluded: [],
     cta: 'Purchase Premium',
     popular: false,
   },
 ];
 
-const addOns = [
-  { name: 'Mobile Service (We Come to You)', price: '£39' },
-  { name: 'EV Van Battery Health Digital PDF Report', price: '£49' },
-  { name: 'Motorhome Habitation Check', price: '£119' },
-  { name: 'Pre-Purchase Market Value Analysis', price: '£29' },
-  { name: 'Extended Warranty Check', price: '£59' },
-];
-
 const comparison = [
-  { feature: 'Inspection Scope', basic: 'Safety-focused', standard: '150+ points', premium: '200+ points' },
-  { feature: 'Vehicle-Specific Safety Check', basic: true, standard: true, premium: true },
-  { feature: 'Brake & Tyre Condition Check', basic: true, standard: true, premium: true },
-  { feature: 'Lights & Signals Test', basic: true, standard: true, premium: true },
-  { feature: 'OBD-II Computer Diagnostics', basic: false, standard: true, premium: true },
-  { feature: 'Inspection Photos', basic: '20+', standard: '60+', premium: '60+' },
-  { feature: 'Digital PDF Report', basic: 'Basic, within 1 hour', standard: 'Detailed, within 1 hour', premium: 'Within 1 hour' },
-  { feature: 'Repair Cost Estimates', basic: false, standard: true, premium: true },
-  { feature: 'Market Value Assessment', basic: false, standard: true, premium: true },
-  { feature: 'Vehicles per Order', basic: '1 vehicle', standard: false, premium: false },
-  { feature: 'Engine Compression Test', basic: false, standard: false, premium: true },
-  { feature: 'Leak-Down Test', basic: false, standard: false, premium: true },
-  { feature: 'Fluid Analysis', basic: false, standard: false, premium: true },
-  { feature: 'Battery & Charging System Test', basic: false, standard: false, premium: true },
-  { feature: 'Underchassis Check', basic: false, standard: false, premium: true },
-  { feature: 'Motorhome Habitation Check', basic: '£119 add-on', standard: '£119 add-on', premium: '£119 add-on' },
-  { feature: 'Phone Consultation', basic: false, standard: false, premium: true },
+  { feature: 'Digital report level', basic: 'Essential', standard: 'Detailed', premium: 'Comprehensive' },
+  { feature: 'Vehicle identification details', basic: true, standard: true, premium: true },
+  { feature: 'Online checkout', basic: true, standard: true, premium: true },
 ];
 
 export default function PricingPage() {
@@ -121,9 +90,10 @@ export default function PricingPage() {
       <section className="relative pt-28 pb-14 sm:pt-32 sm:pb-20 bg-navy overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=2560&q=90"
-            alt="SUV representing vehicle inspection services"
+            src="/pricing.jpg"
+            alt="Illustration of a digital vehicle report"
             fill
+            priority
             sizes="100vw"
             className="object-cover opacity-45"
           />
@@ -131,15 +101,13 @@ export default function PricingPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy/75 via-navy/60 to-navy/35" />
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <Badge className="mb-3 sm:mb-4 bg-primary/20 text-primary border-primary/30">
-            Transparent Pricing
+            Digital Report Pricing
           </Badge>
           <h1 className="text-2xl sm:text-5xl lg:text-6xl font-bold font-display leading-tight text-white mb-3 sm:mb-6 text-balance">
-            Simple, Honest Pricing
+            Simple Pricing for Digital Reports
           </h1>
           <p className="text-sm sm:text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-            No hidden fees. Choose the inspection that fits your van, campervan,
-            or motorhome. Mechanical checks apply to motorised vehicles;
-            habitation inspections cover the motorhome living area.
+            No hidden fees. Choose an essential, detailed, or comprehensive digital vehicle report package and purchase online.
           </p>
         </div>
       </section>
@@ -206,17 +174,11 @@ export default function PricingPage() {
 
                     <div className="space-y-2 sm:space-y-3">
                       <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-                        What is Included
+                        Package Includes
                       </div>
                       {plan.features.map((feature) => (
                         <div key={feature} className="flex items-start gap-1.5 sm:gap-2 text-xs sm:text-sm text-navy">
                           <Check className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary shrink-0 mt-0.5" />
-                          {feature}
-                        </div>
-                      ))}
-                      {plan.excluded.map((feature) => (
-                        <div key={feature} className="flex items-start gap-1.5 sm:gap-2 text-xs sm:text-sm text-muted-foreground line-through opacity-60">
-                          <Check className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 mt-0.5" />
                           {feature}
                         </div>
                       ))}
@@ -226,76 +188,6 @@ export default function PricingPage() {
               </Reveal>
             ))}
           </div>
-
-          {/* Add-ons */}
-          <Reveal>
-            <div className="max-w-4xl mx-auto mt-10 sm:mt-16 rounded-2xl bg-navy p-5 sm:p-8 lg:p-10">
-              <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-gold" />
-                <h3 className="text-lg sm:text-xl font-bold font-display text-white">Optional Add-Ons</h3>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                {addOns.map((addon) => (
-                  <div
-                    key={addon.name}
-                    className="flex items-center justify-between gap-3 p-3 sm:p-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary/30 transition-colors"
-                  >
-                    <span className="text-xs sm:text-sm text-white/80">{addon.name}</span>
-                    <span className="text-xs sm:text-sm font-bold text-primary">{addon.price}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Comparison Table */}
-      <section className="py-12 sm:py-24 bg-white">
-        <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Compare Plans"
-            title="Detailed Feature Comparison"
-            description="See exactly what is included in each check package."
-            className="[&>span]:!text-xs [&>span]:!mb-2 [&>h2]:!text-xl sm:[&>h2]:!text-4xl lg:[&>h2]:!text-5xl [&>p]:!text-sm [&>p]:!mt-2 sm:[&>p]:!mt-4"
-          />
-
-          <Reveal>
-            <div className="mt-8 sm:mt-12 overflow-x-auto rounded-2xl border border-border shadow-lg">
-              <table className="w-full min-w-[640px]">
-                <thead>
-                  <tr className="bg-navy">
-                    <th className="text-left p-2.5 sm:p-5 text-white font-semibold text-xs sm:text-sm">Feature</th>
-                    <th className="text-center p-2.5 sm:p-5 text-white font-semibold text-xs sm:text-sm">Basic</th>
-                    <th className="text-center p-2.5 sm:p-5 text-white font-semibold text-xs sm:text-sm bg-primary/30">Standard</th>
-                    <th className="text-center p-2.5 sm:p-5 text-white font-semibold text-xs sm:text-sm">Premium</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparison.map((row, i) => (
-                    <tr
-                      key={row.feature}
-                      className={cn(
-                        'border-t border-border',
-                        i % 2 === 0 ? 'bg-secondary/20' : 'bg-white'
-                      )}
-                    >
-                      <td className="text-left p-2.5 sm:p-5 text-xs sm:text-sm font-medium text-navy">{row.feature}</td>
-                      <td className="text-center p-2.5 sm:p-5 text-xs sm:text-sm text-muted-foreground">
-                        <CompareCell value={row.basic} />
-                      </td>
-                      <td className="text-center p-2.5 sm:p-5 text-xs sm:text-sm text-muted-foreground bg-primary/5">
-                        <CompareCell value={row.standard} />
-                      </td>
-                      <td className="text-center p-2.5 sm:p-5 text-xs sm:text-sm text-muted-foreground">
-                        <CompareCell value={row.premium} />
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </Reveal>
         </div>
       </section>
 
@@ -306,7 +198,7 @@ export default function PricingPage() {
             Still Not Sure Which Plan is Right?
           </h2>
           <p className="text-sm sm:text-lg text-white/70 mb-6 sm:mb-8">
-            Not sure which inspection fits your vehicle? Our team can help you choose a check for your car, motorcycle, van, truck, caravan, campervan, or motorhome.
+            Need to confirm which vehicle information is available? Contact us before purchasing so we can clarify the report coverage for your vehicle.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <Link href="/contact">

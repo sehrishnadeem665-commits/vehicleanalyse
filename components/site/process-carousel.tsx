@@ -23,30 +23,30 @@ import {
 const processSteps = [
   {
     icon: FileText,
-    title: 'Select Your Plan',
+    title: 'Choose a Digital Report',
     description:
-      'Choose the inspection plan that suits your car, motorcycle, van, truck, caravan, campervan, or motorhome.',
+      'Select the digital report that matches your vehicle type and the information you want to review.',
   },
   {
     icon: ClipboardList,
-    title: 'Enter Your Details',
-    description: 'Fill in your contact and vehicle details to place your booking.',
+    title: 'Provide Your Details',
+    description: 'Enter your contact and vehicle details when placing your online order.',
   },
   {
     icon: CreditCard,
-    title: 'Complete Payment',
-    description: 'Pay securely to confirm your selected inspection plan.',
+    title: 'Complete Your Purchase',
+    description: 'Pay online to submit your selected digital report order.',
   },
   {
     icon: Mail,
-    title: 'Get a Confirmation Email',
-    description: 'We will send a confirmation email with your booking details.',
+    title: 'Receive Order Confirmation',
+    description: 'A confirmation email will be sent with your order details.',
   },
   {
     icon: Check,
     title: 'Receive Your Digital Report',
     description:
-      'Once your inspection is complete, your digital report will be sent to your email.',
+      'Your selected digital report is delivered by email. No physical vehicle inspection or visit is involved.',
   },
 ];
 
@@ -89,7 +89,7 @@ export function ProcessCarousel() {
         <SectionHeading
           eyebrow="How It Works"
           title="A Simple, Transparent Process"
-          description="From booking to receiving your Digital PDF Report, we have designed every step to be effortless and informative."
+          description="Choose and purchase online, then receive your selected digital vehicle report by email. No appointment or physical inspection is required."
           className="[&>span]:!text-xs [&>span]:!mb-2 [&>h2]:!text-2xl sm:[&>h2]:!text-4xl lg:[&>h2]:!text-5xl [&>p]:!text-sm [&>p]:!mt-2 sm:[&>p]:!mt-4"
         />
 

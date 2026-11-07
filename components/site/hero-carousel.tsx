@@ -7,40 +7,36 @@ import { cn } from '@/lib/utils';
 
 const slides = [
   {
-    image:
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2560&q=90',
-    alt: 'Performance car on a scenic road',
-    eyebrow: 'Car & SUV Inspections',
-    title: 'Know Your Vehicle Inside Out',
-    description:
-      'Get a clear, independent assessment before you buy or sell. We check key mechanical, safety, and bodywork details across a wide range of vehicles.',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=2560&q=90',
-    alt: 'Motorcycle ready for a road journey',
-    eyebrow: 'Motorcycle Inspections',
-    title: 'Confidence on Every Ride',
-    description:
-      'Get an independent view of your motorcycle’s condition, with findings that help you understand its key mechanical and safety areas.',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2560&q=90',
-    alt: 'Heavy goods truck on the road',
-    eyebrow: 'Truck & Commercial Vehicle Checks',
-    title: 'Checks for Work and the Road',
-    description:
-      'Get vehicle-specific checks for trucks and commercial vehicles, with clear findings on the areas that matter.',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=2560&q=90',
-    alt: 'SUV ready for a journey',
-    eyebrow: 'Cars, SUVs & More',
-    title: 'Straightforward Findings. Better Decisions.',
-    description:
-      'From cars and SUVs to vans, caravans, motorhomes, motorcycles, and trucks, get findings tailored to your vehicle.',
+    image: '/cars.jpg',
+      alt: 'Illustration of a digital pre-purchase vehicle report on a laptop',
+      eyebrow: 'Digital Service',
+      title: 'Smart Digital Vehicle Reports for Confident Decisions',
+      description:
+        'Get comprehensive digital Vehicles analysis and reports online to make informed decisions.',
+    },
+    {
+      image: '/bike.jpg',
+      alt: 'Illustration of a digital vehicle safety analysis report',
+      eyebrow: 'Digital Vehicle Safety Analysis',
+      title: 'Review Vehicle Safety Information Online',
+      description:
+        'Explore safety-related vehicle information in a digital report. No workshop visit or physical testing is involved.',
+    },
+    {
+      image: '/truck.jpg',
+      alt: 'Illustration of a digital vehicle diagnostic data dashboard',
+      eyebrow: 'Vehicle Diagnostic Data Analysis',
+      title: 'Make Sense of Available Vehicle Data',
+      description:
+        'Review compatible diagnostic information through a digital report, without an in-person scan or physical vehicle examination.',
+    },
+    {
+      image: '/van.jpg',
+      alt: 'Illustration of EV battery and charging data in a digital report',
+      eyebrow: 'EV & Hybrid Vehicle Reports',
+      title: 'Digital Insights for Your Next Decision',
+      description:
+        'Explore available vehicle history and analysis reports online for cars, vans, leisure vehicles, EVs, hybrids, and more.',
   },
 ];
 
@@ -123,7 +119,7 @@ export function HeroCarousel() {
                 href="/booking"
                 className="inline-flex flex-1 items-center justify-center px-2 py-2.5 sm:flex-none sm:px-8 sm:py-4 rounded-xl bg-primary text-white font-semibold text-xs sm:text-base shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 transition-all duration-300"
               >
-                Book Your Check
+                Buy Now
               </a>
               <a
                 href="/pricing"

@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/server';
 
 export const runtime = 'edge';
 export const alt =
-  'Vehicle Analyse UK vehicle checks for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes';
+  'Vehicle Analyse digital vehicle reports for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes';
 export const size = {
   width: 1200,
   height: 630,
@@ -117,7 +117,7 @@ export default function OpenGraphImage() {
                   letterSpacing: 2.4,
                 }}
               >
-                VEHICLE CHECKS · UK
+                DIGITAL VEHICLE REPORTS · UK
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function OpenGraphImage() {
               marginBottom: 18,
             }}
           >
-            INDEPENDENT UK VEHICLE CHECKS
+            100% DIGITAL VEHICLE ANALYSIS
           </div>
           <div
             style={{
@@ -144,7 +144,7 @@ export default function OpenGraphImage() {
               fontWeight: 800,
             }}
           >
-            Confidence for every journey.
+            Smart Digital Vehicle Reports for Confident Decisions
           </div>
           <div
             style={{
@@ -156,7 +156,7 @@ export default function OpenGraphImage() {
               lineHeight: 1.5,
             }}
           >
-            Cars, SUVs, motorcycles, vans, trucks, caravans, campervans and motorhomes.
+            Get detailed vehicle insights, history checks and digital analysis reports online.
           </div>
           <div
             style={{
@@ -170,7 +170,7 @@ export default function OpenGraphImage() {
             }}
           >
             <span style={{ color: '#e5a984', fontSize: 23 }}>✓</span>
-            Clear findings in a Digital PDF Report
+            No Physical Inspection Required
           </div>
         </div>
 

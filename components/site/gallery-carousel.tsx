@@ -2,33 +2,33 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Camera, ChevronLeft, ChevronRight } from 'lucide-react';
+import { FileText, ChevronLeft, ChevronRight } from 'lucide-react';
 import { SectionHeading } from '@/components/site/section-heading';
 
 const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=90',
-    title: 'Car Inspection',
+    src: '/digital-reports/pre-purchase-report.svg',
+    title: 'Digital Pre-Purchase Vehicle Report',
   },
   {
-    src: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=90',
-    title: 'Motorcycle Inspection',
+    src: '/digital-reports/safety-analysis.svg',
+    title: 'Digital Vehicle Safety Analysis',
   },
   {
-    src: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1600&q=90',
-    title: 'SUV Inspection',
+    src: '/digital-reports/diagnostic-data.svg',
+    title: 'Vehicle Diagnostic Data Analysis',
   },
   {
-    src: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=90',
-    title: 'Truck & Commercial Vehicle Check',
+    src: '/digital-reports/mot-emissions-history.svg',
+    title: 'MOT & Emissions History Report',
   },
   {
-    src: 'https://images.pexels.com/photos/594384/van-vw-travel-trip-594384.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&q=90',
-    title: 'Campervan Inspection',
+    src: '/digital-reports/caravan-motorhome-report.svg',
+    title: 'Digital Vehicles Report',
   },
   {
-    src: 'https://images.pexels.com/photos/9354626/pexels-photo-9354626.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&q=90',
-    title: 'Caravan & Motorhome Checks',
+    src: '/digital-reports/ev-hybrid-analysis.svg',
+    title: 'EV & Hybrid Vehicle Analysis Report',
   },
 ];
 
@@ -51,9 +51,9 @@ export function GalleryCarousel() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 sm:gap-6 mb-8 sm:mb-12">
           <SectionHeading
-            eyebrow="Gallery"
-            title="Inside Our Inspection Process"
-            description="A look at checks for cars, SUVs, motorcycles, trucks, vans, caravans, campervans, and motorhomes."
+            eyebrow="Digital Report Gallery"
+            title="Explore Online Vehicle Analysis"
+            description="Illustrations representing the digital report categories available for cars, motorcycles, vans, trucks, and leisure vehicles."
             align="left"
             light
             className="[&>span]:!text-xs [&>span]:!mb-2 [&>h2]:!text-2xl sm:[&>h2]:!text-4xl lg:[&>h2]:!text-5xl [&>p]:!text-sm [&>p]:!mt-2 sm:[&>p]:!mt-4"
@@ -101,7 +101,7 @@ export function GalleryCarousel() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                 <div className="inline-flex items-center gap-2 text-white text-xs sm:text-sm font-medium">
-                  <Camera className="h-4 w-4 text-primary" />
+                  <FileText className="h-4 w-4 text-primary" />
                   {img.title}
                 </div>
               </div>

@@ -50,7 +50,7 @@ export function BrandLogo({ variant = 'light' }: BrandLogoProps) {
             isLight ? 'text-white' : 'text-primary'
           }`}
         >
-          Vehicle checks · UK
+          Digital reports · UK
         </span>
       </span>
     </span>

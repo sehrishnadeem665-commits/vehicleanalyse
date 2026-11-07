@@ -5,13 +5,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   Battery,
-  Car,
   Cpu,
-  Disc,
+  FileSearch,
   Gauge,
   Home,
+  ShieldCheck,
   ArrowRight,
-  Wrench,
 } from 'lucide-react';
 import { Reveal } from '@/components/site/reveal';
 import { SectionHeading } from '@/components/site/section-heading';
@@ -19,103 +18,80 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 
-const inspectionAreas = [
+const reportServices = [
   {
-    icon: Wrench,
-    label: 'Engine & Drivetrain',
-    count: 45,
-    image:
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=90',
-    alt: 'Car viewed during an independent vehicle inspection',
-    title: 'Engine & Drivetrain Check',
+    icon: FileSearch,
+    label: 'Digital Pre-Purchase Vehicle Report',
+    image: '/digital-reports/pre-purchase-report.svg',
+    alt: 'Illustration of a digital pre-purchase vehicle report',
+    title: 'Vehicle History for Purchase Decisions',
     description:
-      'We examine the engine compression, timing belt, transmission operation, differential, driveshaft, mounts, and all visible seals and gaskets for leaks or wear.',
+      'A digital report that brings together relevant vehicle history and information to support your review before buying. No physical vehicle inspection is carried out.',
   },
   {
-    icon: Disc,
-    label: 'Brakes & Suspension',
-    count: 38,
-    image:
-      'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1600&q=90',
-    alt: 'SUV viewed during a vehicle safety inspection',
-    title: 'Brakes & Suspension Check',
+    icon: ShieldCheck,
+    label: 'Digital Vehicle Safety Analysis',
+    image: '/digital-reports/safety-analysis.svg',
+    alt: 'Illustration of a digital vehicle safety analysis report',
+    title: 'Safety Information, Presented Digitally',
     description:
-      'Brake pad thickness, disc condition, caliper operation, brake lines, shock absorbers, struts, springs, bushings, ball joints, tie rods, and wheel bearings are all checked.',
+      'An online summary of available safety-related vehicle information, presented to help you review important details without physical testing.',
   },
   {
     icon: Cpu,
-    label: 'Electrical & Electronics',
-    count: 32,
-    image:
-      'https://images.pexels.com/photos/6870309/pexels-photo-6870309.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&q=90',
-    alt: 'Diagnostic scanner reading van computer modules',
-    title: 'Electrical & Electronics Check',
+    label: 'Vehicle Diagnostic Data Analysis',
+    image: '/digital-reports/diagnostic-data.svg',
+    alt: 'Illustration of vehicle diagnostic data displayed digitally',
+    title: 'Diagnostic Information Review',
     description:
-      'Full OBD-II scan, alternator output, starter function, wiring harness, fuse box, all sensors, infotainment system, and dashboard warning lights are diagnosed.',
-  },
-  {
-    icon: Car,
-    label: 'Exterior & Body',
-    count: 35,
-    image:
-      'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=90',
-    alt: 'Truck viewed during a commercial vehicle inspection',
-    title: 'Exterior & Body Check',
-    description:
-      'Body panels, paint condition, rust check, glass integrity, door operation, trim, seals, undercarriage, frame integrity, and accident damage indicators are inspected.',
+      'A digital analysis of compatible diagnostic data supplied for the vehicle, organizing available fault and system information in a report.',
   },
   {
     icon: Gauge,
-    label: 'Fluids & Filters',
-    count: 25,
-    image:
-      'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=90',
-    alt: 'Motorcycle viewed during a vehicle inspection',
-    title: 'Fluids & Filters Check',
+    label: 'MOT & Emissions History Report',
+    image: '/digital-reports/mot-emissions-history.svg',
+    alt: 'Illustration of MOT and emissions history in a digital report',
+    title: 'MOT & Emissions History',
     description:
-      'Engine oil, transmission fluid, coolant, brake fluid, power steering fluid, differential fluid, air filter, cabin filter, and fuel filter condition are assessed.',
-  },
-  {
-    icon: Battery,
-    label: 'Battery & Charging',
-    count: 15,
-    image:
-      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1600&q=90',
-    alt: 'Electric or hybrid vehicle inspected for battery and charging concerns',
-    title: 'Battery & Charging Check',
-    description:
-      'Battery voltage, cold cranking amps, charging rate, parasitic draw, terminals, cables, and alternator health are tested with professional equipment.',
+      'A digital report focused on available MOT and emissions history information, organized for convenient online review rather than a physical test.',
   },
   {
     icon: Home,
-    label: 'Habitation & Living Area',
-    count: 30,
-    image:
-      'https://images.pexels.com/photos/9354626/pexels-photo-9354626.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&q=90',
-    alt: 'Motorhome habitation area being inspected for safety',
-    title: 'Habitation & Living Area Check',
+    label: 'Digital Vehicles Report',
+    image: '/digital-reports/caravan-motorhome-report.svg',
+    alt: 'Illustration of a caravan and motorhome digital report',
+    title: 'Vehicles Information',
     description:
-      'For caravans, campervans, and motorhomes: gas systems, leisure electrics, water systems, fire safety, ventilation, damp detection, and structural integrity of the living area.',
+      'A digital report for relevant vehicle and habitation information. It does not include an on-site or physical systems inspection.',
+  },
+  {
+    icon: Battery,
+    label: 'EV & Hybrid Vehicle Analysis Report',
+    image: '/digital-reports/ev-hybrid-analysis.svg',
+    alt: 'Illustration of EV battery and charging data in a digital report',
+    title: 'EV & Hybrid Data Analysis',
+    description:
+      'Digital analysis focused on available EV or hybrid battery and charging information. No physical battery test or vehicle inspection is performed.',
   },
 ];
 
 export function HomeServiceExplorer() {
   const [activeService, setActiveService] = useState(0);
-  const activeArea = inspectionAreas[activeService];
+  const activeArea = reportServices[activeService];
 
   return (
     <section className="py-14 sm:py-24 bg-secondary/30">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="What We Check"
-          title="Explore Our 200+ Point Check"
-          description="Explore mechanical and safety checks for motorised vehicles, plus habitation checks for caravans, campervans, and motorhomes."
+          eyebrow="Digital Report Services"
+          title="Explore Our Online Vehicle Reports"
+          description="Choose digital vehicle history, safety, diagnostic data, MOT, leisure vehicle, or EV and hybrid analysis. No physical inspection is required."
           className="[&>span]:!text-xs [&>span]:!mb-2 [&>h2]:!text-2xl sm:[&>h2]:!text-4xl lg:[&>h2]:!text-5xl [&>p]:!text-sm [&>p]:!mt-2 sm:[&>p]:!mt-4"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-8 mt-10 sm:mt-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1.5 sm:gap-2">
-            {inspectionAreas.map((area, index) => {
+            {reportServices.map((area, index) => {
               const AreaIcon = area.icon;
 
               return (
@@ -148,7 +124,7 @@ export function HomeServiceExplorer() {
                     className="px-2 py-0.5 text-[10px] sm:px-2.5 sm:py-0.5 sm:text-xs"
                     variant={activeService === index ? 'default' : 'secondary'}
                   >
-                    {area.count} pts
+                    Digital
                   </Badge>
                 </button>
               );
@@ -175,7 +151,7 @@ export function HomeServiceExplorer() {
                   </p>
                   <Link href="/booking">
                     <Button className="w-fit bg-primary hover:bg-primary/90">
-                      Book This Check <ArrowRight className="ml-2 h-4 w-4" />
+                      Purchase a Digital Report <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
                 </div>

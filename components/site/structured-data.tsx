@@ -1,44 +1,17 @@
 export function StructuredData() {
-  const localBusiness = {
+  const organization = {
     '@context': 'https://schema.org',
-    '@type': 'AutoRepair',
+    '@type': 'Organization',
     name: 'Vehicle Analyse',
     description:
-      'Vehicle inspections for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes, including pre-purchase, safety, diagnostic, and habitation checks.',
+      '100% digital vehicle analysis and report services for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. No physical vehicle inspection is provided.',
     url: 'https://vehicleanalyse.com',
     telephone: '+442079460958',
     email: 'info@vehicleanalyse.com',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '24 Meridian Way',
-      addressLocality: 'London',
-      postalCode: 'SW18 4QL',
-      addressCountry: 'GB',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 51.45,
-      longitude: -0.2,
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '07:00',
-        closes: '19:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
-        opens: '08:00',
-        closes: '17:00',
-      },
-    ],
     areaServed: {
       '@type': 'Country',
       name: 'United Kingdom',
     },
-    priceRange: '£49–£169',
   };
 
   const faqPage = {
@@ -47,82 +20,82 @@ export function StructuredData() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What types of vehicles do you inspect?',
+        name: 'What kind of service does Vehicle Analyse provide?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We provide vehicle-specific inspection services for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes.',
+          text: 'Vehicle Analyse provides 100% digital vehicle analysis and report services. We do not carry out physical vehicle inspections.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is included in the vehicle inspection?',
+        name: 'Which vehicle types are covered?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Our vehicle inspections cover key areas of the vehicle to help identify potential issues and give you a clearer understanding of its overall condition.',
+          text: 'Available digital reports cover cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. The information available depends on the selected report and vehicle.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Do you provide on-site inspections?',
+        name: 'Do you physically inspect or test vehicles?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Inspection availability depends on the selected service and vehicle location. Please check the details of your chosen inspection before placing your order.',
+          text: 'No. The service is 100% digital. There is no vehicle visit, workshop appointment, hands-on inspection, or physical testing.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How do I book a vehicle inspection?',
+        name: 'How do I order a digital report?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Simply select your preferred inspection service and complete your order online. Once your order is placed, you will receive a confirmation message with the relevant details.',
+          text: 'Choose a report package, enter your contact and vehicle details, and complete your order online. A confirmation is sent after your order is submitted.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Will I receive an order confirmation?',
+        name: 'How will I receive my report?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Once you have placed your order, you will receive a confirmation message confirming that your order has been received.',
+          text: 'Your selected digital report is delivered by email. The applicable report details and delivery information are provided with your order.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How soon will I receive my Digital PDF Report?',
+        name: 'What information is included?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'You will receive your Digital PDF Inspection Report within 1 hour of placing your order, so you can review the inspection findings promptly.',
+          text: 'The report content depends on the service selected and the information available for the vehicle. It is a digital analysis, not a physical condition assessment.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is included in the Digital PDF Report?',
+        name: 'Does the report certify a vehicle’s condition?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Your Digital PDF Report provides a summary of the inspection findings, highlighting the vehicle’s condition and any issues identified during the inspection.',
+          text: 'No. A digital report is provided for information and does not certify the physical condition, safety, or roadworthiness of a vehicle.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Can I use the inspection report to negotiate the price?',
+        name: 'Can I use the report when considering a purchase?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. The report can help you identify potential issues and use the inspection findings to support price negotiations with the seller.',
+          text: 'The report may help you review available vehicle information as part of your decision. It does not replace a physical inspection or professional advice.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Which inspection is right for my vehicle?',
+        name: 'Which digital report should I choose?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The appropriate inspection depends on your vehicle type and the checks you require. Choose a service that matches your car, motorcycle, van, truck, caravan, campervan, or motorhome.',
+          text: 'Choose from the available pre-purchase, safety, diagnostic data, MOT and emissions history, caravan and motorhome, or EV and hybrid report options.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is a habitation check?',
+        name: 'Does a caravan or motorhome report involve a site visit?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A habitation check focuses on the living area of a caravan, campervan, or motorhome, including relevant systems and facilities.',
+          text: 'No. The caravan and motorhome report is digital and does not include an on-site habitation or systems inspection.',
         },
       },
     ],
@@ -132,7 +105,7 @@ export function StructuredData() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
       />
       <script
         type="application/ld+json"

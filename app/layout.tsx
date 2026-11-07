@@ -14,11 +14,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL('https://vehicleanalyse.com'),
   title: {
-    default: 'Vehicle Analyse | UK Vehicle Checks for Cars, Vans & More',
+    default: 'Vehicle Analyse | Smart Digital Vehicle Reports',
     template: '%s | Vehicle Analyse',
   },
   description:
-    'UK vehicle checks for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Get clear findings in a Digital PDF Report.',
+    '100% digital vehicle analysis and reports for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. No physical inspection required.',
   alternates: {
     canonical: '/',
   },
@@ -26,28 +26,28 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     siteName: 'Vehicle Analyse',
-    title: 'Vehicle Analyse | UK Vehicle Checks for Cars, Vans & More',
+    title: 'Vehicle Analyse | Smart Digital Vehicle Reports',
     description:
-      'UK vehicle checks for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Get clear findings in a Digital PDF Report.',
+      '100% digital vehicle analysis and reports for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. No physical inspection required.',
     url: 'https://vehicleanalyse.com',
     images: [
       {
         url: '/opengraph-image?version=vehicle-analyse-2026-10-29',
         width: 1200,
         height: 630,
-        alt: 'Vehicle Analyse UK vehicle checks with clear findings in a Digital PDF Report',
+        alt: 'Vehicle Analyse digital vehicle reports for confident decisions',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vehicle Analyse | UK Vehicle Checks for Cars, Vans & More',
+    title: 'Vehicle Analyse | Smart Digital Vehicle Reports',
     description:
-      'UK vehicle checks for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Get clear findings in a Digital PDF Report.',
+      '100% digital vehicle analysis and reports for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. No physical inspection required.',
     images: [
       {
         url: '/opengraph-image?version=vehicle-analyse-2026-10-29',
-        alt: 'Vehicle Analyse UK vehicle checks with clear findings in a Digital PDF Report',
+        alt: 'Vehicle Analyse digital vehicle reports for confident decisions',
       },
     ],
   },

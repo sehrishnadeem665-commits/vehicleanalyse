@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Contact Vehicle Analyse | UK Vehicle Check Support',
   description:
-    'Contact Vehicle Analyse for help with vehicle checks for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes. Email info@vehicleanalyse.com or visit our London location.',
+    'Contact Vehicle Analyse for help with digital vehicle reports for cars, SUVs, motorcycles, vans, trucks, caravans, campervans, and motorhomes.',
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Contact Vehicle Analyse | Vehicle Check Support',
