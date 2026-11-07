@@ -90,14 +90,6 @@ export function StructuredData() {
           text: 'Choose from the available pre-purchase, safety, diagnostic data, MOT and emissions history, caravan and motorhome, or EV and hybrid report options.',
         },
       },
-      {
-        '@type': 'Question',
-        name: 'Does a caravan or motorhome report involve a site visit?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'No. The caravan and motorhome report is digital and does not include an on-site habitation or systems inspection.',
-        },
-      },
     ],
   };
 
